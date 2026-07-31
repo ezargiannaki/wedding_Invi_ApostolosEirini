@@ -220,10 +220,13 @@ button{
 }
 
 .places{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:54px;
+  display:flex;
+  justify-content:center;
   background:#f4f4f4;
+}
+
+.places article{
+  width:min(650px,100%);
 }
 
 .thin-line{
