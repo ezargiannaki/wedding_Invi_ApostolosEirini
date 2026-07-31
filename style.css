@@ -1,0 +1,563 @@
+:root{
+  --page:#eeeeee;
+  --paper:#ffffff;
+  --soft:#f1f1f1;
+  --ink:#333333;
+  --muted:#666666;
+  --line:#4d4d4d;
+  --button:#8d8d8d;
+  --button-dark:#5f5f5f;
+  --shadow:0 12px 34px rgba(0,0,0,.16);
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  margin:0;
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+  background:var(--page);
+  color:var(--ink);
+  font-family:'Manrope',Arial,sans-serif;
+}
+
+body::before,
+body::after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  background:#fff;
+  opacity:.72;
+  transform:rotate(-7deg);
+}
+
+body::before{
+  width:70vw;
+  height:38vh;
+  left:-8vw;
+  top:-12vh;
+}
+
+body::after{
+  width:60vw;
+  height:34vh;
+  right:-12vw;
+  bottom:-12vh;
+}
+
+img,
+iframe{
+  max-width:100%;
+}
+
+.nav{
+  position:fixed;
+  z-index:20;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:18px;
+  max-width:92vw;
+  overflow-x:auto;
+  padding:11px 18px;
+  background:rgba(255,255,255,.86);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  border-radius:999px;
+  backdrop-filter:blur(10px);
+}
+
+.nav a{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:13px;
+  white-space:nowrap;
+}
+
+.hero{
+  min-height:86vh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:90px 20px 50px;
+}
+
+.script{
+  font-family:'Great Vibes','Cormorant Garamond',serif;
+  font-size:clamp(40px,6vw,70px);
+  font-weight:400;
+  line-height:1;
+  color:var(--ink);
+  margin:0 0 26px;
+}
+
+.script.small{
+  font-size:42px;
+  margin-bottom:8px;
+}
+
+h1,h2,h3{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;
+  margin:0;
+}
+
+h1{
+  font-size:clamp(54px,10vw,120px);
+  line-height:.92;
+}
+
+h1 span{
+  font-style:italic;
+  color:var(--muted);
+}
+
+h2{
+  font-size:clamp(42px,5vw,70px);
+  font-style:italic;
+}
+
+.hero-date{
+  font-size:24px;
+  color:var(--muted);
+  margin:24px 0 30px;
+}
+
+.pill,
+button{
+  display:inline-block;
+  border:0;
+  border-radius:999px;
+  padding:12px 22px;
+  background:var(--button-dark);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-style:italic;
+  box-shadow:inset 0 0 0 2px #fff;
+  cursor:pointer;
+}
+
+.pill.grey{
+  background:var(--button);
+  margin-top:26px;
+}
+
+.paper{
+  width:min(1120px,88vw);
+  margin:0 auto 70px;
+  background:var(--paper);
+  box-shadow:var(--shadow);
+  padding:60px;
+  text-align:center;
+}
+
+.split{
+  display:grid;
+  grid-template-columns:1fr 1px 1fr;
+  align-items:center;
+  gap:48px;
+  min-height:260px;
+}
+
+.divider{
+  height:170px;
+  background:var(--line);
+  opacity:.7;
+}
+
+.date-underlined{
+  display:inline-block;
+  font-size:34px;
+  color:var(--muted);
+  font-style:italic;
+  border-bottom:none;
+  padding:0 10px 5px;
+}
+
+.countdown{
+  display:grid;
+  grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;
+  gap:18px;
+  align-items:center;
+  margin-top:10px;
+}
+
+.countdown strong{
+  display:block;
+  font-size:31px;
+  font-style:italic;
+  font-weight:400;
+  color:var(--muted);
+}
+
+.countdown span{
+  font-size:10px;
+  font-style:italic;
+  color:var(--muted);
+}
+
+.countdown em{
+  font-size:26px;
+  color:var(--muted);
+}
+
+.welcome p,
+.gift>p,
+.rsvp>p{
+  max-width:640px;
+  margin:16px auto;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.places{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:54px;
+  background:#f4f4f4;
+}
+
+.thin-line{
+  height:1px;
+  background:#222;
+  margin:34px 0 48px;
+}
+
+.place-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;
+  font-style:italic;
+  color:var(--muted);
+}
+
+.time{
+  font-size:24px;
+  font-weight:700;
+  font-style:italic;
+  color:var(--muted);
+}
+
+iframe{
+  width:100%;
+  height:330px;
+  border:0;
+  margin-top:22px;
+  background:#ddd;
+}
+
+.people-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin-top:32px;
+}
+
+.people-grid div,
+.iban-box,
+form{
+  background:var(--soft);
+  padding:24px;
+  border:1px solid rgba(0,0,0,.06);
+}
+
+.people-grid div{
+  cursor:pointer;
+}
+
+.people-grid strong,
+.people-grid span{
+  display:block;
+}
+
+.people-grid span{
+  margin-top:7px;
+  color:var(--muted);
+  font-style:italic;
+}
+
+.iban-box{
+  max-width:650px;
+  margin:28px auto 0;
+}
+
+.iban-box button,
+form button{
+  margin-top:12px;
+  background:var(--button);
+}
+
+form{
+  max-width:650px;
+  margin:30px auto 0;
+  display:grid;
+  gap:14px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:14px 15px;
+  border:1px solid rgba(0,0,0,.15);
+  background:#fff;
+  font:inherit;
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+footer{
+  text-align:center;
+  color:var(--muted);
+  padding:20px 0 45px;
+}
+
+/* Story photos */
+
+.story-photos-section{
+  padding:70px 18px;
+  text-align:center;
+  background:var(--page);
+}
+
+.story-photos-section .section-title,
+.couple-script-title{
+  font-family:'Great Vibes','Cormorant Garamond',serif;
+  font-size:clamp(44px,6vw,70px);
+  font-weight:400;
+  line-height:1;
+  color:var(--ink);
+  text-align:center;
+  margin:0 0 30px;
+  position:relative;
+}
+
+.story-photos-section .section-title::after,
+.couple-script-title::after{
+  content:"♡";
+  display:block;
+  color:var(--button);
+  font-size:20px;
+  margin-top:12px;
+}
+
+.story-image-card{
+  max-width:720px;
+  width:92%;
+  margin:0 auto 60px;
+  padding:12px;
+  background:rgba(255,255,255,.78);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:22px;
+  box-shadow:0 14px 35px rgba(0,0,0,.10);
+}
+
+.story-image-card img{
+  width:100%;
+  display:block;
+  border-radius:16px;
+}
+
+.couple-card{
+  max-width:620px;
+  margin-bottom:0;
+}
+
+/* Photo popup */
+
+.photo-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.72);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+}
+
+.photo-modal.show{
+  display:flex;
+}
+
+.photo-modal img{
+  max-width:min(420px,88vw);
+  max-height:78vh;
+  object-fit:cover;
+  border-radius:22px;
+  background:#fff;
+  padding:10px;
+  box-shadow:0 20px 55px rgba(0,0,0,.35);
+}
+
+/* Mobile */
+
+@media(max-width:820px){
+  .nav{
+    width:92vw;
+    justify-content:flex-start;
+    gap:12px;
+    padding:10px 14px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:115px 18px 55px;
+  }
+
+  h1{
+    font-size:58px;
+    line-height:.95;
+  }
+
+  h2{
+    font-size:42px;
+  }
+
+  .script{
+    font-size:46px;
+  }
+
+  .paper{
+    width:92vw;
+    padding:34px 20px;
+    margin-bottom:38px;
+  }
+
+  .paper.split{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    overflow:hidden;
+  }
+
+  .paper.split > div{
+    width:100%;
+  }
+
+  .divider{
+    width:70%;
+    height:1px;
+    margin:auto;
+  }
+
+  .countdown{
+    width:100%;
+    grid-template-columns:repeat(7,auto);
+    justify-content:center;
+    gap:6px;
+  }
+
+  .countdown strong{
+    font-size:24px;
+  }
+
+  .countdown span{
+    font-size:9px;
+  }
+
+  .countdown em{
+    font-size:18px;
+  }
+
+  .places{
+    display:block;
+  }
+
+  .places article{
+    margin-bottom:42px;
+  }
+
+  iframe{
+    height:260px;
+  }
+
+  .people-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .story-photos-section{
+    padding:50px 14px;
+  }
+
+  .story-image-card{
+    width:95%;
+    padding:8px;
+    margin-bottom:45px;
+    border-radius:18px;
+  }
+
+  .story-image-card img{
+    border-radius:13px;
+  }
+
+  .couple-card{
+    max-width:92%;
+  }
+}
+
+@media(max-width:480px){
+  h1{
+    font-size:48px;
+  }
+
+  .hero-date{
+    font-size:22px;
+  }
+
+  .pill,
+  button{
+    padding:11px 18px;
+  }
+
+  .people-grid{
+    grid-template-columns:1fr;
+  }
+
+  .date-underlined{
+    font-size:30px;
+  }
+
+  .countdown strong{
+    font-size:22px;
+  }
+
+  .countdown em{
+    font-size:16px;
+  }
+}
+
+/* Fade-in κατά το scroll */
+.reveal{
+  opacity:0;
+  transform:translateY(35px);
+  transition:
+    opacity .9s ease,
+    transform .9s ease;
+  will-change:opacity, transform;
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Χρήστες που έχουν απενεργοποιήσει τα animations */
+@media (prefers-reduced-motion: reduce){
+  .reveal{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+}
