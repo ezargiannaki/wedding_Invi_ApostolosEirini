@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Απόστολος & Ειρήνη | Wedding Invitation</title>
+  <meta name="description" content="Ηλεκτρονική πρόσκληση γάμου" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Great+Vibes&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="#date">Save the date</a>
+    <a href="#places">Τοποθεσίες</a>
+    <a href="#people">Πρόσωπα</a>
+    <a href="#gift">Λίστα Γάμου</a>
+    <a href="#rsvp">Συμμετοχή στη δεξίωση</a>
+  </nav>
+
+  <header class="hero" id="home">
+    <p class="script small">Wedding Invitation</p>
+    <h1>Απόστολος <span>&</span> Ειρήνη</h1>
+    <p class="hero-date">  </p>
+    <a class="pill" href="#rsvp">Απάντηση RSVP</a>
+  </header>
+
+  <main>
+    <section class="paper split" id="date">
+      <div class="save-date">
+        <p class="script">Save The Date</p>
+        <div class="date-underlined">07.05.2027</div>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <p class="script">Countdown</p>
+        <div class="countdown" data-date="2027-05-07T18:00:00">
+          <div><strong id="days">0</strong><span>Day(s)</span></div>
+          <em>:</em>
+          <div><strong id="hours">0</strong><span>Hour(s)</span></div>
+          <em>:</em>
+          <div><strong id="minutes">0</strong><span>Minute(s)</span></div>
+          <em>:</em>
+          <div><strong id="seconds">0</strong><span>Second(s)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-photos-section" id="story">
+      <h2 class="section-title">Η ιστορία μας</h2>
+    
+      <div class="story-image-card">
+        <img src="images/timeline.jpg" alt="Η ιστορία μας">
+      </div>
+    
+      <h2 class="couple-script-title">και... Εμείς </h2>
+    <!--♡" -->
+      <div class="story-image-card couple-card">
+        <img src="images/couple.jpg" alt="Απόστολος και Ειρήνη">
+      </div>
+    </section>
+    
+    <section class="paper welcome">
+      <h2>Σας περιμένουμε εκεί!</h2>
+      <p>Οι σχέσεις είναι σαν τα λουλούδια, όσο τα φροντίζεις και τα αγαπάς, μένουν ζωντανά.
+        Με μεγάλη μας χαρά θα θέλαμε να παρευρεθείτε εκείνη την μέρα.</p>
+    </section>
+
+<!--<section class="paper places fade-in" id="places">-->
+<section class="paper places" id="places">
+  
+  <article>
+    <h2>Το μυστήριο</h2>
+    <div class="thin-line"></div>
+    <p class="place-name">
+      Ιερός Ναός Αγίου Τιμοθέου και Αγίας Μαύρας
+    </p>
+    <p class="time">6:00 p.m.</p>
+    <iframe
+      src="https://www.google.com/maps?q=Ιερός+Ναός+Αγίας+Μαύρας+και+Αγίου+Τιμοθέου,+Μαραθωνομάχων+1,+Ηλιούπολη+16342&output=embed"
+      title="Χάρτης Εκκλησίας"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <a
+      class="pill grey"
+      href="https://www.google.com/maps/dir/?api=1&destination=Ιερός+Ναός+Αγίας+Μαύρας+και+Αγίου+Τιμοθέου,+Μαραθωνομάχων+1,+Ηλιούπολη+16342"
+      target="_blank"
+      rel="noopener">
+      Πλοήγηση | Εκκλησία
+    </a>
+  </article>
+
+  <article>
+    <h2>Η δεξίωση</h2>
+    <div class="thin-line"></div>
+    <p class="place-name">Κτήμα Elegant</p>
+    <p class="time">7:30 p.m.</p>
+    <iframe
+      src="https://www.google.com/maps?q=Κτήμα+Elegant,+Αμπελώνες+Παιανίας,+Σπάτα&output=embed"
+      title="Χάρτης Κτήματος Elegant"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <a
+      class="pill grey"
+      href="https://www.google.com/maps/dir/?api=1&destination=Κτήμα+Elegant,+Αμπελώνες+Παιανίας,+Σπάτα"
+      target="_blank"
+      rel="noopener">
+      Πλοήγηση | Δεξίωση
+    </a>
+  </article>
+
+</section>
+    
+<!--Απλο template για κουμπάρους --><!--
+    <section class="paper people" id="people">
+      <p class="script">Our People</p>
+      <h2>Οι άνθρωποί μας</h2>
+      <div class="people-grid">
+        <div><strong>Γαμπρός</strong><span>Απόστολος</span></div>
+        <div><strong>Νύφη</strong><span>Ειρήνη</span></div>
+        <div><strong>Κουμπάρα</strong><span>Κατερίνα Καλακώνα</span></div>
+        <div><strong>Κουμπάρος</strong><span>Χρήστος Ρέλλιας</span></div>
+      </div>
+    </section>
+   --> 
+    <!-- Περιεργο template για κουμπάρους -->
+    <section class="paper people" id="people">
+    <p class="script">Our People</p>
+  
+    <div class="people-grid">
+      <div onclick="openPersonPhoto('groom')">
+        <strong>Γαμπρός</strong>
+        <span>Απόστολος</span>
+      </div>
+  
+      <div onclick="openPersonPhoto('bride')">
+        <strong>Νύφη</strong>
+        <span>Ειρήνη</span>
+      </div>
+  
+      <div onclick="openPersonPhoto('koumpara')">
+        <strong>Κουμπάρα</strong>
+        <span>Αικατερίνη Καλακώνα</span>
+      </div>
+  
+      <div onclick="openPersonPhoto('koumparos')">
+        <strong>Κουμπάρος</strong>
+        <span>Χρήστος Ρέλλιας</span>
+      </div>
+    </div>
+    </section> 
+      
+    <div id="photoModal" class="photo-modal" onclick="closePersonPhoto(event)">
+      <img id="personPhoto" src="" alt="">
+    </div>
+      
+  
+    
+    <section class="paper people" id="families">
+      <h2>Οι Οικογένειες</h2>
+      <div class="people-grid">
+        <div><strong>Πατέρας γαμπρού</strong><span>Παναγιώτης Κιοβρέκης</span></div>
+        <div><strong>Μητέρα γαμπρού</strong><span>Μαρία Μαχαίρα</span></div>
+        <div><strong>Πατέρας νύφης</strong><span>Κωνσταντίνος Ζαργιαννάκης</span></div>
+        <div><strong>Μητέρα νύφης</strong><span>Δέσποινα Καυκιά</span></div>
+      </div>
+    </section>
+
+    <section class="paper gift" id="gift">
+      <p class="script">Gift</p>
+      <h2>Λίστα γάμου</h2>
+      <p>Για όποιον επιθυμεί:</p>
+      <div class="iban-box">
+        <p>Τράπεζα: Πειραιώς</p>
+        <p id="iban">GR00 0000 0000 0000 0000 0000 000</p>
+        <p>Δικαιούχος: Ειρήνη Ζαργιαννάκη</p>
+        <button onclick="copyIban()">Αντιγραφή IBAN</button>
+
+        <p>IRIS Ειρήνης</p>
+        <p id="iris">6942989216</p>
+        <button onclick="copyIris()">Αντιγραφή iris</button>
+        <p>IRIS Αποστόλη</p>
+        <p id="iris2">6984040195</p>
+        <button onclick="copyIris2()">Αντιγραφή iris</button>
+      </div>
+    </section>
+
+
+    <section class="paper rsvp" id="rsvp">
+      <h2>Θα είστε μαζί μας;</h2>
+      <p>Παρακαλούμε απαντήστε έως 10 Απριλίου 2027.</p>
+      <form action="https://formspree.io/f/mlgyvljk" method="POST">
+        <input name="name" type="text" placeholder="Ονοματεπώνυμο" required>
+        <input name="phone" type="tel" placeholder="Κινητό">
+        <select name="attendance" required>
+          <option value="">Θα παρευρεθείτε;</option>
+          <option>Ναι</option>
+          <option>Όχι</option>
+        </select>
+        <input name="guests" type="number" min="1" max="6" placeholder="Αριθμός ατόμων">
+        <textarea name="message" placeholder="Μήνυμα / σημείωση"></textarea>
+        <button type="submit">Αποστολή</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>Απόστολος & Ειρήνη · 7.5.2027</footer>
+  <script src="script.js"></script>
+</body>
+</html>
