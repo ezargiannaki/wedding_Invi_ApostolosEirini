@@ -564,3 +564,64 @@ footer{
     transition:none;
   }
 }
+
+/* ===========================
+   Photo sharing section
+   =========================== */
+
+.photo-share{
+  text-align:center;
+}
+
+.photo-script{
+  color:#b89552;
+}
+
+.photo-share h2{
+  color:var(--ink);
+  margin-bottom:20px;
+}
+
+.photo-share-text{
+  max-width:650px;
+  margin:18px auto 28px;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.qr-box{
+  width:220px;
+  margin:0 auto 24px;
+  padding:16px;
+  background:#fafafa;
+  border:1px solid rgba(184,149,82,.30);
+}
+
+.qr-image{
+  width:100%;
+  display:block;
+}
+
+.photo-upload-btn{
+  display:inline-block;
+  padding:12px 24px;
+  border-radius:999px;
+
+  background:#b89552;
+  color:#fff;
+
+  text-decoration:none;
+  font-weight:600;
+  font-style:italic;
+
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.75);
+
+  transition:
+    transform .15s ease,
+    background .15s ease;
+}
+
+.photo-upload-btn:hover{
+  transform:translateY(-1px);
+  background:#a78345;
+}
