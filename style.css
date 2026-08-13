@@ -34,11 +34,11 @@ body{
   max-width:100%;
   overflow-x:hidden;
 
-  background:
-    url("background-gold-grey.png")
-    center top / cover
-    no-repeat
-    fixed;
+  background-image: url("images/background-gold-grey.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   color:var(--ink);
   font-family:'Manrope',Arial,sans-serif;
