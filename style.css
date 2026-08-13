@@ -19,7 +19,7 @@ html{
   overflow-x:hidden;
 }
 
-/*body{
+body{
   margin:0;
   width:100%;
   max-width:100%;
@@ -27,7 +27,8 @@ html{
   background:var(--page);
   color:var(--ink);
   font-family:'Manrope',Arial,sans-serif;
-}*/
+}
+/*Χρυσο-Γκρι background
 body{
   margin:0;
   width:100%;
@@ -42,7 +43,7 @@ body{
 
   color:var(--ink);
   font-family:'Manrope',Arial,sans-serif;
-}
+}*/
 
 body::before,
 body::after{
