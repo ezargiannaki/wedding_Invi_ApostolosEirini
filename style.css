@@ -19,12 +19,27 @@ html{
   overflow-x:hidden;
 }
 
-body{
+/*body{
   margin:0;
   width:100%;
   max-width:100%;
   overflow-x:hidden;
   background:var(--page);
+  color:var(--ink);
+  font-family:'Manrope',Arial,sans-serif;
+}*/
+body{
+  margin:0;
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+
+  background:
+    url("background-gold-grey.png")
+    center top / cover
+    no-repeat
+    fixed;
+
   color:var(--ink);
   font-family:'Manrope',Arial,sans-serif;
 }
