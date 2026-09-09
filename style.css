@@ -641,3 +641,43 @@ footer{
   transform:translateY(-1px);
   background:#a78345;
 }
+
+/*για την γραμμη την μαυρη μεχρι να ενεργοποιησουμε το QR*/
+.coming-soon-line{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  width:100%;
+  margin:0 auto 35px;
+  color:#555;
+  font-size:12px;
+  font-style:italic;
+  letter-spacing:.04em;
+}
+
+.coming-soon-line::before,
+.coming-soon-line::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:rgba(0,0,0,.28);
+}
+
+.coming-soon-line span{
+  white-space:nowrap;
+}
+
+/*για το κινητο προσαρμογή*/
+@media(max-width:480px){
+  .coming-soon-line{
+    gap:8px;
+    font-size:10px;
+  }
+
+  .coming-soon-line span{
+    white-space:normal;
+    text-align:center;
+    max-width:220px;
+  }
+}
+/*mexri edw*/
