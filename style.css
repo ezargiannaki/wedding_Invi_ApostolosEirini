@@ -666,7 +666,7 @@ footer{
 .coming-soon-line span{
   white-space:nowrap;
 }*/
-.share-photos{
+.photo-share{
   position:relative;
   overflow:hidden;
 }
@@ -675,15 +675,15 @@ footer{
   position:absolute;
   z-index:20;
 
-  top:45%;
+  top:50%;
   left:50%;
 
   width:140%;
   padding:18px 10px;
 
-  transform:translate(-50%, -50%) rotate(-25deg);
+  transform:translate(-50%, -50%) rotate(-12deg);
 
-  background:rgba(35, 35, 35, 0.55);
+  background:rgba(25,25,25,.30);
   color:#fff;
 
   text-align:center;
