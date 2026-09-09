@@ -111,3 +111,51 @@ if ('IntersectionObserver' in window) {
   });
 
 }
+
+// ===========================
+// positionPhotoRibbon
+// ===========================
+
+function positionPhotoRibbon() {
+  const section = document.querySelector('.photo-share');
+  const ribbon = document.querySelector('.coming-soon-ribbon');
+
+  if (!section || !ribbon) return;
+
+  const width = section.clientWidth;
+  const height = section.clientHeight;
+
+  // Μήκος της διαγωνίου
+  const diagonal = Math.sqrt(
+    width * width + height * height
+  );
+
+  // Γωνία από κάτω αριστερά προς πάνω δεξιά
+  const angle =
+    Math.atan2(height, width) * (180 / Math.PI);
+
+  const ribbonHeight = ribbon.offsetHeight;
+
+  ribbon.style.width = diagonal + 'px';
+
+  // Το κέντρο της κορδέλας ξεκινά ακριβώς
+  // από την κάτω αριστερή γωνία
+  ribbon.style.top =
+    (height - ribbonHeight / 2) + 'px';
+
+  ribbon.style.transform =
+    `rotate(-${angle}deg)`;
+}
+
+window.addEventListener('load', positionPhotoRibbon);
+window.addEventListener('resize', positionPhotoRibbon);
+
+if ('ResizeObserver' in window) {
+  const photoSection =
+    document.querySelector('.photo-share');
+
+  if (photoSection) {
+    new ResizeObserver(positionPhotoRibbon)
+      .observe(photoSection);
+  }
+}
