@@ -675,22 +675,18 @@ footer{
   position:absolute;
   z-index:20;
 
-  left:0;
-  bottom:0;
+  top:50%;
+  left:50%;
 
-  width:100%;
-  height:60px;
+  width:115%;
+  padding:18px 10px;
 
-  transform-origin:left bottom;
-  transform:rotate(-28deg);
+  transform:translate(-50%, -50%) rotate(-12deg);
 
   background:rgba(25,25,25,.30);
   color:#fff;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
+  text-align:center;
   font-family:'Cormorant Garamond', serif;
   font-size:22px;
   font-style:italic;
