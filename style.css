@@ -642,7 +642,7 @@ footer{
   background:#a78345;
 }
 
-/*για την γραμμη την μαυρη μεχρι να ενεργοποιησουμε το QR*/
+/*για την γραμμη την μαυρη μεχρι να ενεργοποιησουμε το QR
 .coming-soon-line{
   display:flex;
   align-items:center;
@@ -665,9 +665,40 @@ footer{
 
 .coming-soon-line span{
   white-space:nowrap;
+}*/
+.share-photos{
+  position:relative;
+  overflow:hidden;
 }
 
-/*για το κινητο προσαρμογή*/
+.coming-soon-ribbon{
+  position:absolute;
+  z-index:20;
+
+  top:45%;
+  left:50%;
+
+  width:140%;
+  padding:18px 10px;
+
+  transform:translate(-50%, -50%) rotate(-25deg);
+
+  background:rgba(35, 35, 35, 0.55);
+  color:#fff;
+
+  text-align:center;
+  font-family:'Cormorant Garamond', serif;
+  font-size:22px;
+  font-style:italic;
+  letter-spacing:.04em;
+
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+
+  pointer-events:none;
+}
+
+/*για το κινητο προσαρμογή
 @media(max-width:480px){
   .coming-soon-line{
     gap:8px;
@@ -680,4 +711,4 @@ footer{
     max-width:220px;
   }
 }
-/*mexri edw*/
+mexri edw*/
