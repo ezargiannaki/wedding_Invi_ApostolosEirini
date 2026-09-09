@@ -675,29 +675,32 @@ footer{
   position:absolute;
   z-index:20;
 
-  top:50%;
-  left:50%;
+  left:0;
+  top:0;
 
-  width:115%;
-  padding:18px 10px;
-
-  transform:translate(-50%, -50%) rotate(-12deg);
+  height:60px;
+  padding:0 20px;
 
   background:rgba(25,25,25,.30);
   color:#fff;
 
-  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
   font-family:'Cormorant Garamond', serif;
   font-size:22px;
   font-style:italic;
   letter-spacing:.04em;
 
+  transform-origin:left center;
+
   backdrop-filter:blur(2px);
   -webkit-backdrop-filter:blur(2px);
 
   pointer-events:none;
+  white-space:nowrap;
 }
-
 /*για το κινητο προσαρμογή
 @media(max-width:480px){
   .coming-soon-line{
